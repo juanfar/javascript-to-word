@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="word.css">
+  <script src="word.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <form class="nForm">
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Sigla" required>
+        </div>
+        <div class="col">
+          <input type="number" class="form-control" placeholder="Consecutivo" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Ciudad" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="sel1">Título:</label>
+            <select class="form-control" id="sel1" required>
+              <option>Señor</option>
+              <option>Señora</option>
+              <option>Doctor</option>
+              <option>Doctora</option>
+              <option>Ingeniero</option>
+              <option>Ingeniera</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="NOMBRES Y APELLIDOS DESTINATARIO" style="text-transform:uppercase;"
+            onkeyup="javascript:this.value=this.value.toUpperCase();" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Cargo">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Denominación o razón social de la Entidad">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Cargo">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" onclick="Export2Doc('exportContent');">Crear Documento</button>
+    </form>
+  </div>
+
+  <div id="exportContent">
+
+  </div>
+
+</body>
+
+</html>

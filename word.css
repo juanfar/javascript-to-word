@@ -1,0 +1,15 @@
+.container {
+    margin-top: 100px;
+}
+
+.nForm {
+    width: 50%;
+    margin: 0 auto;
+}
+.nForm .row {
+    margin-bottom: 5px;
+}
+
+.nForm button {
+    margin-top: 20px;
+}
